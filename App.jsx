@@ -15,3 +15,8 @@ import './styles/sidebar.css';
 // Mock Data
 import { mockEarthquakes } from './data/mockData';
 
+// Component Imports
+import EarthquakeCard from './components/EarthquakeCard';
+import RecentActivity from './components/RecentActivity';
+
+

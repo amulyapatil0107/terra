@@ -52,3 +52,7 @@ const Dashboard = ({
                         </div>
                         {filters}
                       </div>
+
+		      {/* Earthquake cards container */}
+                      {cards}
+                    </div>

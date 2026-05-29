@@ -31,3 +31,18 @@ function App() {
   const [maxDepth, setMaxDepth] = useState(300);
   const [regionFilter, setRegionFilter] = useState('All');
 
+  // Simulate dashboard initialization/sensor calibration
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleResetFilters = () => {
+    setSearchTerm('');
+    setMinMagnitude(0);
+    setMaxDepth(300);
+    setRegionFilter('All');
+  };
+

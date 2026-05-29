@@ -28,3 +28,10 @@ const Dashboard = ({
         <main className="p-4 md:p-6 lg:p-8 space-y-6 overflow-y-auto max-w-[1600px] mx-auto w-full">
           {isLoading ? (
             <div className="flex items-center justify-center min-h-[50vh]">
+	      {/* Spinner */}
+              <div className="text-cyan-400 font-mono animate-pulse">SYSTEM CORRELATION IN PROGRESS...</div>
+            </div>
+          ) : (
+            <>
+              {activeTab === 'dashboard' && (
+                <>

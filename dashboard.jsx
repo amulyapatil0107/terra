@@ -35,3 +35,5 @@ const Dashboard = ({
             <>
               {activeTab === 'dashboard' && (
                 <>
+		  {/* Stats Summary Panel */}
+                  {stats}

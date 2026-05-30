@@ -101,4 +101,14 @@ const Dashboard = ({
                       <div>
                         <p className="text-slate-300 font-bold">LIVE TELEMETRY AUTO-REFRESH</p>
                         <p className="text-xs text-slate-500">Syncs feed with USGS stream every 30 seconds</p>
+          
+		                             </div>
+                      <span className="px-3 py-1 bg-cyan-950 text-cyan-400 border border-cyan-500 rounded text-xs">ENABLED</span>
+                    </div>
+                    <div className="flex justify-between items-center py-3 border-b border-slate-800">
+                      <div>
+                        <p className="text-slate-300 font-bold">CRITICAL MAGNITUDE ALARM</p>
+                        <p className="text-xs text-slate-500">Audio visual flash alarm for events &gt; 6.5 mag</p>
+                      </div>
+                      <span className="px-3 py-1 bg-red-950 text-red-400 border border-red-500 rounded text-xs">ENABLED</span>
 

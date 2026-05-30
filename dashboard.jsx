@@ -117,3 +117,17 @@ const Dashboard = ({
                         <p className="text-slate-300 font-bold">API CONDUIT SYSTEM</p>
                         <p className="text-xs text-slate-500">USGS GeoJSON live API connection</p>
                       </div>
+		                             <span className="px-3 py-1 bg-slate-800 text-slate-400 rounded text-xs">MOCK_CONNECTED</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </main>
+      </div>
+    </div>
+  );
+};
+export default Dashboard;
+

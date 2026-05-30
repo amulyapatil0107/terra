@@ -76,3 +76,6 @@ const Dashboard = ({
                   </div>
                 </div>
               )}
+
+	       {activeTab === 'filters' && (
+

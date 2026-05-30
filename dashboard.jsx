@@ -92,3 +92,9 @@ const Dashboard = ({
               )}
 
 	       {activeTab === 'settings' && (
+		 <div className="max-w-2xl mx-auto glass-panel p-6 rounded-xl border border-slate-800 font-mono">
+                  <h2 className="text-xl font-bold text-cyan-400 mb-6 tracking-widest border-b border-slate-800 pb-2">
+                    MONITOR SYSTEM CONTROL
+                  </h2>
+                  <div className="space-y-4 text-sm">
+                    <div className="flex justify-between

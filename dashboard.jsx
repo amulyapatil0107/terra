@@ -111,4 +111,9 @@ const Dashboard = ({
                         <p className="text-xs text-slate-500">Audio visual flash alarm for events &gt; 6.5 mag</p>
                       </div>
                       <span className="px-3 py-1 bg-red-950 text-red-400 border border-red-500 rounded text-xs">ENABLED</span>
-
+            </div>
+                    <div className="flex justify-between items-center py-3">
+                      <div>
+                        <p className="text-slate-300 font-bold">API CONDUIT SYSTEM</p>
+                        <p className="text-xs text-slate-500">USGS GeoJSON live API connection</p>
+                      </div>

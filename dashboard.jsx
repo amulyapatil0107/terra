@@ -78,4 +78,16 @@ const Dashboard = ({
               )}
 
 	       {activeTab === 'filters' && (
+                 <div className="max-w-2xl mx-auto glass-panel p-6 rounded-xl border border-slate-800">
+                  <h2 className="text-xl font-mono font-bold text-cyan-400 mb-6 tracking-widest border-b border-slate-800 pb-2">
+                    FILTER TUNING MATRIX
+                  </h2>
+                  <div className="space-y-6">
+                    <p className="text-slate-400 font-mono text-sm leading-relaxed">
+                      Calibrate the seismograph feeds to filter out noise, industrial tremors, and minor tectonic adjustments.
+                    </p>
+                    {filters}
+                  </div>
+                </div>
+              )}
 

@@ -97,4 +97,8 @@ const Dashboard = ({
                     MONITOR SYSTEM CONTROL
                   </h2>
                   <div className="space-y-4 text-sm">
-                    <div className="flex justify-between
+                    <div className="flex justify-between  items-center py-3 border-b border-slate-800">
+                      <div>
+                        <p className="text-slate-300 font-bold">LIVE TELEMETRY AUTO-REFRESH</p>
+                        <p className="text-xs text-slate-500">Syncs feed with USGS stream every 30 seconds</p>
+

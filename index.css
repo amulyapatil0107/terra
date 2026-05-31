@@ -28,3 +28,5 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;

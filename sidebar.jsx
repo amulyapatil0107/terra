@@ -23,3 +23,15 @@ const Sidebar = ({ activeTab, setActiveTab, sidebarOpen, setSidebarOpen }) => {
         sidebarOpen ? 'w-64' : 'w-20'
       }`}
     >
+       {/* Sidebar Header Brand */}
+      <div className="h-16 flex items-center justify-between px-5 border-b border-slate-800/80">
+        <div className="flex items-center gap-3 overflow-hidden">
+          <div className="p-2 bg-cyan-950 border border-cyan-500/30 rounded-lg text-cyan-400">
+            <Activity size={18} className="animate-pulse" />
+          </div>
+          {sidebarOpen && (
+            <span className="font-mono text-xs font-bold tracking-[0.2em] text-cyan-400 whitespace-nowrap">
+              E-MONITOR
+            </span>
+          )}
+        </div>

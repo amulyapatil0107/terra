@@ -48,3 +48,19 @@ const Navbar = ({ searchTerm, setSearchTerm, alertCount = 3 }) => {
             </span>
           )}
         </div>
+
+
+        {/* System Sync Icon */}
+        <button
+          className="p-2 bg-slate-900 border border-slate-800 hover:border-cyan-500/50 rounded-lg text-slate-400 hover:text-cyan-400 transition-all duration-200"
+          title="Force telemetry rebuild"
+          onClick={() => window.location.reload()}
+        >
+          <RefreshCw size={16} className="hover:rotate-180 transition-transform duration-500" />
+        </button>
+      </div>
+    </header>
+  );
+};
+export default Navbar;
+

@@ -30,3 +30,11 @@ const CustomTooltip = ({ active, payload, label }) => {
   return null;
 };
 const Charts = ({ earthquakes = [] }) => {
+  // 1. Data for Magnitude Bar Chart (top 7 latest earthquakes for display)
+  const barData = earthquakes
+    .slice(0, 7)
+    .map(eq => ({
+      name: eq.location.split(',')[0],
+      Magnitude: eq.magnitude,
+      Depth: eq.depth
+    }));

@@ -16,4 +16,10 @@ const Sidebar = ({ activeTab, setActiveTab, sidebarOpen, setSidebarOpen }) => {
     { id: 'filters', label: 'Filters', icon: SlidersHorizontal },
     { id: 'settings', label: 'Settings', icon: Settings },
   ];
-
+  
+   return (
+    <aside 
+      className={`sidebar-container shrink-0 flex flex-col h-screen select-none ${
+        sidebarOpen ? 'w-64' : 'w-20'
+      }`}
+    >

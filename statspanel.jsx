@@ -74,3 +74,8 @@ const StatsPanel = ({ earthquakes = [] }) => {
             variants={cardVariants}
             className={`glass-panel p-4 rounded-xl border flex flex-col justify-between h-32 hover:scale-[1.02] transition-transform duration-200 ${item.glowColor}`}
           >
+	    {/* Header */}
+            <div className="flex justify-between items-start">
+              <span className="font-mono text-xs text-slate-400 tracking-widest">{item.label}</span>
+              <Icon size={18} />
+            </div>

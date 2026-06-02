@@ -46,3 +46,33 @@ const Sidebar = ({ activeTab, setActiveTab, sidebarOpen, setSidebarOpen }) => {
           </button>
         )}
       </div>
+
+      {/* Navigation Items */}
+      <nav className="flex-1 py-6 space-y-2 px-3">
+        {!sidebarOpen && (
+          <div className="flex justify-center mb-6">
+            <button 
+              onClick={() => setSidebarOpen(true)}
+              className="p-2 rounded bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 hover:border-cyan-500/50 transition-colors"
+            >
+              <ChevronRight size={16} />
+            </button>
+          </div>
+        )}
+        {menuItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = activeTab === item.id;
+          return (
+            <button
+              key={item.id}
+              onClick={() => setActiveTab(item.id)}
+              className={`sidebar-item w-full flex items-center gap-4 py-3 px-4 rounded-lg font-mono text-sm tracking-wider text-slate-400 hover:text-slate-100 ${
+                isActive ? 'active' : ''
+              }`}
+            >
+              <Icon size={18} className={isActive ? 'text-cyan-400' : 'text-slate-400'} />
+              {sidebarOpen && <span className="transition-opacity duration-300">{item.label}</span>}
+            </button>
+          );
+	 })}
+      </nav>

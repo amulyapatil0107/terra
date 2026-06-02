@@ -36,3 +36,15 @@ const Navbar = ({ searchTerm, setSearchTerm, alertCount = 3 }) => {
           <span className="text-[10px] text-slate-500 uppercase tracking-wider">SYSTEM_COORDINATE_TIME</span>
           <span className="text-xs text-cyan-400 font-bold">{systemTime}</span>
         </div>
+
+	{/* Notifications Icon */}
+        <div className="relative cursor-pointer group">
+          <div className="p-2 bg-slate-900 border border-slate-800 hover:border-red-500/50 rounded-lg text-slate-400 hover:text-red-400 transition-all duration-200">
+            <Bell size={16} />
+          </div>
+          {alertCount > 0 && (
+            <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 border border-slate-950 rounded-full flex items-center justify-center font-mono text-[8px] font-bold text-white pulse-glow-red">
+              {alertCount}
+            </span>
+          )}
+        </div>

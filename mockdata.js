@@ -55,3 +55,12 @@ export const mockEarthquakes = [
     severity: "major",
     region: "Oceania"
   },
+  {
+    id: "eq-2026-007",
+    location: "Reykjanes Ridge, Iceland",
+    magnitude: 4.2,
+    depth: 10,
+    time: "2026-05-29T02:50:00Z",
+    severity: "minor",
+    region: "Europe/Africa"
+  },

@@ -46,3 +46,12 @@ export const mockEarthquakes = [
     severity: "major",
     region: "Asia-Pacific"
   },
+  {
+    id: "eq-2026-006",
+    location: "Kermadec Islands, New Zealand",
+    magnitude: 5.9,
+    depth: 110,
+    time: "2026-05-29T04:12:10Z",
+    severity: "major",
+    region: "Oceania"
+  },

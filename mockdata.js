@@ -10,3 +10,12 @@ export const mockEarthquakes = [
     severity: "critical",
     region: "Asia-Pacific"
   },
+   {
+    id: "eq-2026-002",
+    location: "Northern California, USA",
+    magnitude: 4.8,
+    depth: 8,
+    time: "2026-05-29T13:10:15Z",
+    severity: "moderate",
+    region: "Americas"
+  },

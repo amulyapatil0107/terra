@@ -69,3 +69,13 @@ const RecentActivity = ({ earthquakes = [] }) => {
           </div>
         )}
       </div>
+
+       {/* Terminal Footer */}
+      <div className="mt-3 pt-2 border-t border-slate-900/80 flex items-center justify-between font-mono text-[9px] text-slate-500">
+        <span>LOGS_CAP: 100/100</span>
+        <span className="animate-pulse">SYS_MONITOR: SECURE</span>
+      </div>
+    </div>
+  );
+};
+export default RecentActivity;

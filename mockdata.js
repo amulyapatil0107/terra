@@ -73,3 +73,12 @@ export const mockEarthquakes = [
     severity: "moderate",
     region: "Asia-Pacific"
   },
+  {
+    id: "eq-2026-009",
+    location: "Banda Sea, Indonesia",
+    magnitude: 6.0,
+    depth: 140,
+    time: "2026-05-28T21:05:00Z",
+    severity: "major",
+    region: "Asia-Pacific"
+  },

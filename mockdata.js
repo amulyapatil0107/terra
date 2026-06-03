@@ -100,3 +100,12 @@ export const mockEarthquakes = [
     severity: "major",
     region: "Asia-Pacific"
   },
+  {
+    id: "eq-2026-012",
+    location: "Pacific-Antarctic Ridge",
+    magnitude: 4.5,
+    depth: 10,
+    time: "2026-05-28T12:05:00Z",
+    severity: "minor",
+    region: "Oceania"
+  }

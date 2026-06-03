@@ -35,3 +35,37 @@ const RecentActivity = ({ earthquakes = [] }) => {
                 className="p-2.5 bg-slate-950/40 rounded border border-slate-900/60 hover:border-slate-800/80 flex items-start justify-between gap-3 group transition-colors"
               >
                 <div className="flex items-start gap-2.5 min-w-0">
+		   {/* Alarm Light indicator */}
+                  <span className={`w-1.5 h-1.5 rounded-full mt-1 shrink-0 ${
+                    eq.severity === 'critical' ? 'bg-red-500 animate-ping' :
+                    eq.severity === 'major' ? 'bg-orange-500 animate-pulse' :
+                    eq.severity === 'moderate' ? 'bg-yellow-500' :
+                    'bg-cyan-500'
+                  }`} />
+
+                  <div className="min-w-0">
+                    <div className="text-slate-300 font-bold group-hover:text-cyan-400 transition-colors truncate">
+                      {eq.location}
+                    </div>
+                    <div className="text-slate-500 text-[9px] mt-0.5 space-x-2">
+                      <span>MAG: <strong className="text-slate-300">{eq.magnitude.toFixed(1)} Mw</strong></span>
+                      <span>DEPTH: <strong className="text-slate-300">{eq.depth} km</strong></span>
+                    </div>
+                  </div>
+                </div>
+                <span className="text-slate-500 text-[9px] shrink-0 font-bold">
+                  {timeStr}
+                </span>
+              </motion.div>
+            );
+          })}
+        </AnimatePresence>
+        {earthquakes.length === 0 && (
+          <div className="h-48 flex flex-col items-center justify-center text-slate-600 gap-2 border border-dashed border-slate-900 rounded-lg">
+            <ShieldAlert size={20} className="text-slate-700" />
+            <span className="text-[9px] tracking-widest uppercase">
+              NO CORRELATION ALERTS IN BUFFER
+            </span>
+          </div>
+        )}
+      </div>

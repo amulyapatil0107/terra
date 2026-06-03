@@ -47,3 +47,16 @@ const EarthquakeCard = ({ earthquake }) => {
           <MapPin size={14} className="text-cyan-500 shrink-0" />
           {location}
         </h3>
+
+	  {/* Telemetry Stats */}
+        <div className="grid grid-cols-2 gap-2 pt-1 border-t border-slate-900/60 font-mono text-[10px] text-slate-400">
+          <div className="flex items-center gap-1.5">
+            <Compass size={12} className="text-blue-400" />
+            <span>DEPTH: <strong className="text-slate-200">{depth} km</strong></span>
+          </div>
+          <div className="flex items-center gap-1.5">
+            <Clock size={12} className="text-slate-500" />
+            <span className="truncate" title={formattedTime}>{formattedTime.split(',')[1] || formattedTime}</span>
+          </div>
+        </div>
+      </div>

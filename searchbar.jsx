@@ -13,3 +13,16 @@ const SearchBar = ({ searchTerm, setSearchTerm }) => {
         placeholder="SEARCH LOCATION / REGION..."
         className="w-full pl-9 pr-8 py-2 bg-slate-900/60 border border-slate-800 focus:border-cyan-500/50 rounded-lg text-slate-100 placeholder-slate-500 tracking-wider outline-none transition-all duration-300 focus:shadow-glow-cyan"
       />
+      {searchTerm && (
+        <button
+          onClick={() => setSearchTerm('')}
+          className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-500 hover:text-cyan-400 transition-colors"
+        >
+          <X size={14} />
+        </button>
+      )}
+    </div>
+  );
+};
+export default SearchBar;
+

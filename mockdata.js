@@ -37,3 +37,12 @@ export const mockEarthquakes = [
     severity: "moderate",
     region: "Europe/Africa"
   },
+  {
+    id: "eq-2026-005",
+    location: "Mindanao, Philippines",
+    magnitude: 6.8,
+    depth: 58,
+    time: "2026-05-29T07:30:00Z",
+    severity: "major",
+    region: "Asia-Pacific"
+  },

@@ -109,3 +109,18 @@ export const mockEarthquakes = [
     severity: "minor",
     region: "Oceania"
   }
+ ];
+export const getSeverityColor = (severity) => {
+  switch (severity) {
+    case 'critical':
+      return 'text-red-400 border-red-500 bg-red-950/20';
+    case 'major':
+      return 'text-orange-400 border-orange-500 bg-orange-950/20';
+    case 'moderate':
+      return 'text-yellow-400 border-yellow-500 bg-yellow-950/20';
+    case 'minor':
+    default:
+      return 'text-cyan-400 border-cyan-500 bg-cyan-950/20';
+  }
+};
+

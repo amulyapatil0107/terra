@@ -60,3 +60,22 @@ const EarthquakeCard = ({ earthquake }) => {
           </div>
         </div>
       </div>
+
+       {/* Magnitude Tag (Large Badge) */}
+      <div className="flex flex-col items-center justify-center self-stretch w-16 bg-slate-950/40 rounded-lg border border-slate-900/80 p-2 shrink-0">
+        <span className={`text-2xl font-bold font-mono tracking-tighter ${
+          severity === 'critical' ? 'text-red-500' :
+          severity === 'major' ? 'text-orange-400' :
+          severity === 'moderate' ? 'text-yellow-400' :
+          'text-cyan-400'
+        }`}>
+          {magnitude.toFixed(1)}
+        </span>
+        <span className="text-[7px] font-mono text-slate-500 uppercase tracking-[0.2em] mt-0.5">
+          MAGNITUDE
+        </span>
+      </div>
+    </motion.div>
+  );
+};
+export default EarthquakeCard;

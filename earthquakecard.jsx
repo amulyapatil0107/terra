@@ -41,3 +41,9 @@ const EarthquakeCard = ({ earthquake }) => {
           </span>
           <span className="font-mono text-[9px] text-slate-500 uppercase tracking-widest">{region}</span>
         </div>
+
+	 {/* Location Place */}
+        <h3 className="font-mono font-bold text-slate-200 text-sm tracking-wide truncate flex items-center gap-1.5">
+          <MapPin size={14} className="text-cyan-500 shrink-0" />
+          {location}
+        </h3>

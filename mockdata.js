@@ -64,3 +64,12 @@ export const mockEarthquakes = [
     severity: "minor",
     region: "Europe/Africa"
   },
+  {
+    id: "eq-2026-008",
+    location: "Hindu Kush, Afghanistan",
+    magnitude: 5.5,
+    depth: 210,
+    time: "2026-05-28T23:18:45Z",
+    severity: "moderate",
+    region: "Asia-Pacific"
+  },

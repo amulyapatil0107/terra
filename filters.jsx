@@ -13,3 +13,25 @@ const Filters = ({
   const regions = ["All", "Asia-Pacific", "Americas", "Europe/Africa", "Oceania"];
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-2 text-slate-300 font-mono text-xs">
+
+        {/* Magnitude Range Filter */}
+      <div className="space-y-2">
+        <div className="flex justify-between items-center">
+          <span className="text-slate-400 tracking-wider">MIN MAGNITUDE</span>
+          <span className="text-cyan-400 font-bold">{minMagnitude.toFixed(1)} Mw</span>
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="9.0"
+          step="0.5"
+          value={minMagnitude}
+          onChange={(e) => setMinMagnitude(parseFloat(e.target.value))}
+          className="w-full h-1.5 bg-slate-900 border border-slate-800 rounded-lg appearance-none cursor-pointer accent-cyan-500"
+        />
+        <div className="flex justify-between text-[9px] text-slate-500">
+          <span>0.0 Mw</span>
+          <span>5.0 Mw</span>
+          <span>9.0 Mw</span>
+        </div>
+      </div>

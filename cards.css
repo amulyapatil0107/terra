@@ -42,3 +42,22 @@
   border-color: rgba(6, 182, 212, 0.4);
   box-shadow: 0 4px 20px rgba(6, 182, 212, 0.2);
 }
+
+/* Activity logs custom scrollbar */
+.activity-feed-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(6, 182, 212, 0.2) rgba(15, 23, 42, 0.3);
+}
+.activity-feed-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.activity-feed-scroll::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+.activity-feed-scroll::-webkit-scrollbar-thumb {
+  background: rgba(6, 182, 212, 0.2);
+  border-radius: 2px;
+}
+.activity-feed-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.5);
+}

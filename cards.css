@@ -5,3 +5,17 @@
   position: relative;
 }
 
+.eq-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow 0.3s ease;
+  pointer-events: none;
+}
+
+

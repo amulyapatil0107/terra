@@ -1,0 +1,2 @@
+This branch adds visual effects to the globe.
+Added pulsing marker animation.

@@ -1,0 +1,3 @@
+This branch (ita) focuses on interactive tooltips and controls.
+Added hover tooltips for markers.
+Enabled zoom and drag controls.

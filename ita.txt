@@ -1,0 +1,6 @@
+This branch adds tooltips to the globe.
+Features include:
+- Hover over markers to see earthquake details
+- Tooltip shows magnitude, depth, and location
+- Improves interactivity and user understanding
+

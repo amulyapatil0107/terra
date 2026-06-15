@@ -5,3 +5,4 @@ Bangalore, Magnitude 5.6, Depth 40km
 Tokyo, Magnitude 6.2, Depth 30km
 Tooltips improve usability and user understanding.
 Sydney, Magnitude 4.8, Depth 20km
+Sydney, Magnitude 4.8, Depth 20km

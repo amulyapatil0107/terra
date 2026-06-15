@@ -22,3 +22,4 @@ if __name__ == "__main__":
 # added error handling for missing ita.txt
 # adjusted tooltip print format
 # comments added for readability
+# cleaned up code structure

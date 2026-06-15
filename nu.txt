@@ -5,3 +5,4 @@ Features include:
 - Reset view
 Controls improve interactivity and usability.
 
+Zoom in/out control added.

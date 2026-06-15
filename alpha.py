@@ -23,3 +23,4 @@ if __name__ == "__main__":
 
 # Added error handling for missing alpha.txt
 def setup_globe(auto_rotate=True): pass
+# Alpha branch complete

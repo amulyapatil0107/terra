@@ -27,3 +27,4 @@ if __name__ == "__main__":
 
 # improved default settings for effects
 # comments added for readability
+# added error handling for missing omega.txt

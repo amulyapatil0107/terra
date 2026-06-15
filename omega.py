@@ -31,3 +31,4 @@ if __name__ == "__main__":
 # adjusted atmosphere glow intensity
 # cleaned up code structure
 # added confirmation messages for effects
+# omega branch complete

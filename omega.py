@@ -29,3 +29,4 @@ if __name__ == "__main__":
 # comments added for readability
 # added error handling for missing omega.txt
 # adjusted atmosphere glow intensity
+# cleaned up code structure

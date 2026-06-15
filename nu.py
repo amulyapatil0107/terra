@@ -27,3 +27,4 @@ if __name__ == "__main__":
 
 # comments added for readability
 # added error handling for missing nu.txt
+# adjusted zoom sensitivity

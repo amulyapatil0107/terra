@@ -25,3 +25,4 @@ if __name__ == "__main__":
     add_starfield()
     add_cinematic_effects()
 
+# improved default settings for effects

@@ -19,3 +19,4 @@ if __name__ == "__main__":
     add_tooltip("Tokyo", 6.2, 30)
 
 # ita branch complete
+# added error handling for missing ita.txt

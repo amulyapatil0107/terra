@@ -8,3 +8,4 @@ Sydney, Magnitude 4.8, Depth 20km
 Sydney, Magnitude 4.8, Depth 20km
 San Francisco, Magnitude 7.1, Depth 10km
 Tooltips improve usability and user understanding.
+ITA branch complete with multiple tooltips.

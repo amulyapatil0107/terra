@@ -26,3 +26,4 @@ if __name__ == "__main__":
     add_cinematic_effects()
 
 # improved default settings for effects
+# comments added for readability

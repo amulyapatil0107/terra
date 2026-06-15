@@ -29,3 +29,4 @@ if __name__ == "__main__":
 # added error handling for missing nu.txt
 # adjusted zoom sensitivity
 # cleaned up code structure
+# added confirmation message for reset

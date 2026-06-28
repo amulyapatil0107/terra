@@ -353,4 +353,14 @@
                 sun.position.set(Math.cos(t) * 50, 20, Math.sin(t) * 50);
 
                 ctrl.update();
+                // Update UI every 6 frames to save CPU
+                if (++frame % 6 === 0) {
+                    const d = camera.position.length();
+                    dLat.textContent = (Math.asin(camera.position.y / d) * 57.2958).toFixed(3) + '°';
+                    dLon.textContent = (Math.atan2(camera.position.x, camera.position.z) * 57.2958).toFixed(3) + '°';
+                    dAlt.textContent = ((d - R) * 637 | 0) + ' km';
+                    dRot.textContent = Math.abs(earth.rotation.y - lastY).toFixed(4) + '°/f';
+                    lastY = earth.rotation.y;
+                    dSun.textContent = (Math.atan2(sun.position.z, sun.position.x) * 57.2958).toFixed(1) + '°';
+                }
 

@@ -214,4 +214,14 @@
  const scene = new THREE.Scene();
             const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1500);
             camera.position.set(0, 4, 26);
+ const ctrl = new THREE.OrbitControls(camera, canvas);
+            ctrl.enableDamping = true;
+            ctrl.dampingFactor = 0.04;
+            ctrl.enablePan = false;
+            ctrl.minDistance = 14;
+            ctrl.maxDistance = 45;
+            ctrl.rotateSpeed = 0.4;
+            ctrl.zoomSpeed = 0.6;
+            ctrl.autoRotate = true;
+            ctrl.autoRotateSpeed = 0.35;
 

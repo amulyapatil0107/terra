@@ -348,3 +348,9 @@
                 clouds.rotation.y += 0.0004;
                 atmos.rotation.copy(earth.rotation);
 
+                // Slowly orbit the sun direction
+                const t = performance.now() * 0.0001;
+                sun.position.set(Math.cos(t) * 50, 20, Math.sin(t) * 50);
+
+                ctrl.update();
+

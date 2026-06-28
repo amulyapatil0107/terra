@@ -275,4 +275,20 @@
                 earthMat.specular.set(0x555555);
                 earthMat.needsUpdate = true;
             });
+            // ── Clouds ──
+            const cloudMat = new THREE.MeshPhongMaterial({
+                transparent: true, opacity: 0,
+                blending: THREE.AdditiveBlending,
+                depthWrite: false, shininess: 0,
+            });
+            const clouds = new THREE.Mesh(
+                new THREE.SphereGeometry(R + 0.12, 48, 48), cloudMat
+            );
+            earth.add(clouds);
+
+            tl.load('https://unpkg.com/three-globe/example/img/earth-clouds.png', tex => {
+                cloudMat.map = tex;
+                cloudMat.opacity = 0.3;
+                cloudMat.needsUpdate = true;
+            });
 

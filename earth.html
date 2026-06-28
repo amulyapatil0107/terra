@@ -363,4 +363,14 @@
                     lastY = earth.rotation.y;
                     dSun.textContent = (Math.atan2(sun.position.z, sun.position.x) * 57.2958).toFixed(1) + '°';
                 }
+ renderer.render(scene, camera);
+            }
 
+            window.addEventListener('resize', () => {
+                camera.aspect = window.innerWidth / window.innerHeight;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight);
+            });
+
+            tick();
+        })();

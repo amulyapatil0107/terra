@@ -333,4 +333,11 @@
             const dAlt = document.getElementById('d-alt');
             const dRot = document.getElementById('d-rot');
             const dSun = document.getElementById('d-sun');
+            // Auto-rotate pause/resume on interaction
+            let arTimeout;
+            ctrl.addEventListener('start', () => { ctrl.autoRotate = false; });
+            ctrl.addEventListener('end', () => {
+                clearTimeout(arTimeout);
+                arTimeout = setTimeout(() => { ctrl.autoRotate = true; }, 4000);
+            });
 

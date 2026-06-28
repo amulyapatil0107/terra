@@ -318,3 +318,12 @@
             );
             scene.add(atmos);
 
+            // ── Lighting ──
+            scene.add(new THREE.AmbientLight(0xffffff, 0.12));
+            const sun = new THREE.DirectionalLight(0xfff5e6, 1.6);
+            sun.position.set(50, 20, 30);
+            scene.add(sun);
+            const fill = new THREE.DirectionalLight(0x3366ff, 0.12);
+            fill.position.set(-50, -20, -30);
+            scene.add(fill);
+

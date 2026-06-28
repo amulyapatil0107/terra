@@ -254,3 +254,10 @@
             // Load textures progressively (main texture first, extras after)
             const tl = new THREE.TextureLoader();
 
+            // 1) Main color – applied as soon as it arrives
+            tl.load('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg', tex => {
+                earthMat.map = tex;
+                earthMat.color.set(0xffffff);
+                earthMat.needsUpdate = true;
+            });
+

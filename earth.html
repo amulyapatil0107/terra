@@ -340,4 +340,11 @@
                 clearTimeout(arTimeout);
                 arTimeout = setTimeout(() => { ctrl.autoRotate = true; }, 4000);
             });
+            // ── Animate ──
+            let lastY = 0, frame = 0;
+            function tick() {
+                requestAnimationFrame(tick);
+                earth.rotation.y += 0.0008;
+                clouds.rotation.y += 0.0004;
+                atmos.rotation.copy(earth.rotation);
 

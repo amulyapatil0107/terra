@@ -234,4 +234,9 @@
                 sp[i] = r * Math.sin(ph) * Math.cos(th);
                 sp[i + 1] = r * Math.sin(ph) * Math.sin(th);
                 sp[i + 2] = r * Math.cos(ph);
-            }
+            }const sg = new THREE.BufferGeometry();
+            sg.setAttribute('position', new THREE.BufferAttribute(sp, 3));
+            scene.add(new THREE.Points(sg, new THREE.PointsMaterial({
+                color: 0xffffff, size: 0.8, sizeAttenuation: true, transparent: true, opacity: 0.85
+            })));
+

@@ -1,10 +1,10 @@
-# 📊 Live Earthquake & Disaster Monitor
+# 📊 LIVE EARTHQUAKE AND DISASTOR
 
 A state-of-the-art, dark cyberpunk/hacker-style React telemetry dashboard designed for disaster monitoring operators. This project provides real-time seismic analytics, critical alert streams, and tectonic wave tracking utilizing glassmorphism visual designs and smooth micro-animations.
 
 ---
 
-## ⚡ Tech Stack & Libraries
+## ⚡ TECH STACK AND LIBRARIES
 * **Core**: React 19 + Vite 8
 * **Styling**: Tailwind CSS v4 (native `@tailwindcss/vite` JIT compiler integration)
 * **Charts**: Recharts (Custom themed dark charts: Line, Bar, and Pie)
@@ -13,7 +13,7 @@ A state-of-the-art, dark cyberpunk/hacker-style React telemetry dashboard design
 
 ---
 
-## 🚀 Key Features
+## 🚀 KEY FEATURES
 
 * **🎛️ Collapsible Control Room Sidebar**: Fully responsive navigation panel detailing system coordinates, active stream logs, and uptime meters.
 * **📈 Triple Telemetry Visualizer Deck**:
@@ -26,7 +26,7 @@ A state-of-the-art, dark cyberpunk/hacker-style React telemetry dashboard design
 
 ---
 
-## 📂 Project Architecture
+## 📂 PROJECT ARCHITECTURE
 
 The directory follows a highly modular, decoupled structure:
 
